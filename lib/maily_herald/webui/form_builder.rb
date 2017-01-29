@@ -15,7 +15,6 @@ module MailyHerald
         @help_scope = options[:help_scope]
 
         if Rails::VERSION::MAJOR >= 4.2
-          puts "rails 5"
           super object_name, object, template, options
         else
           super object_name, object, template, options
